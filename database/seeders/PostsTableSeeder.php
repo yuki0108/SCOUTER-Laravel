@@ -16,7 +16,7 @@ class PostsTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(Post::class, 50)
+        factory(Post::class, 10)
             ->create()
             ->each(function ($post) {
                 $comments = factory(Comment::class, 2)->make();
