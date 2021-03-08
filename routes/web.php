@@ -18,4 +18,4 @@ use app\Http\Controllers\PostsController;
 //     return view('welcome');
 // });
 
-Route::get('/index', 'App\Http\Controllers\PostsController@index')->name('top');
+Route::get('/', 'app\Http\Controllers\PostsController@index')->name('top');
