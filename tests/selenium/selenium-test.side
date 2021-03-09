@@ -1,0 +1,124 @@
+{
+  "id": "8ee2b597-9e89-4959-af99-476e8b020aa6",
+  "version": "2.0",
+  "name": "selenium-test",
+  "url": "http://localhost:8000",
+  "tests": [{
+    "id": "450a15c3-28a0-4306-8e55-2382453744a1",
+    "name": "selenium-test",
+    "commands": [{
+      "id": "06833948-2863-4797-8b61-74135cc3bde7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e23f257-3d0d-400d-afe9-13a940dd0e37",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1013x1047",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e49c2eb2-2136-49d8-a612-23bb59a6c3af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar > .container",
+      "targets": [
+        ["css=.navbar > .container", "css:finder"],
+        ["xpath=//div", "xpath:position"],
+        ["xpath=//div[contains(.,'SCOUTER-Laravel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e227ef78-71bf-4097-8443-ec5921ff5da4",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=SCOUTER-Laravel",
+      "targets": [
+        ["linkText=SCOUTER-Laravel", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'SCOUTER-Laravel')]", "xpath:link"],
+        ["xpath=//a[@href='http://localhost:8000']", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'SCOUTER-Laravel')]", "xpath:innerText"]
+      ],
+      "value": "SCOUTER-Laravel"
+    }, {
+      "id": "a4857a27-d2ef-4850-9e21-d59e3df27a04",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(2) > .card-header",
+      "targets": [
+        ["css=.card:nth-child(2) > .card-header", "css:finder"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a689c3eb-0c1e-4e8f-9358-819c2dd59d51",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.card:nth-child(2) > .card-header",
+      "targets": [
+        ["css=.card:nth-child(2) > .card-header", "css:finder"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": "投稿のタイトル"
+    }, {
+      "id": "d55a344e-86f8-4890-bc4d-ce01eed84b2f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(2) .card-text",
+      "targets": [
+        ["css=.card:nth-child(2) .card-text", "css:finder"],
+        ["xpath=//div[2]/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'scouterのテストです。\nこれがLaravel上級の問題です。他にもコースはあるよ。')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e547014-5aa9-4cec-95cf-9de86f7f94a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(2) .card-text",
+      "targets": [
+        ["css=.card:nth-child(2) .card-text", "css:finder"],
+        ["xpath=//div[2]/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'scouterのテストです。\nこれがLaravel上級の問題です。他にもコースはあるよ。')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c66bdc8-788d-48ba-9144-25d6a66be3c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(2) .card-text",
+      "targets": [
+        ["css=.card:nth-child(2) .card-text", "css:finder"],
+        ["xpath=//div[2]/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'scouterのテストです。\nこれがLaravel上級の問題です。他にもコースはあるよ。')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49401c22-f63c-4cf5-81de-238f0dcbd3c7",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.card:nth-child(2) .card-text",
+      "targets": [
+        ["css=.card:nth-child(2) .card-text", "css:finder"],
+        ["xpath=//div[2]/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'scouterのテストです。\nこれがLaravel上級の問題です。他にもコースはあるよ。')]", "xpath:innerText"]
+      ],
+      "value": "scouterのテストです。\\nこれがLaravel上級の問題です。他にもコースはあるよ。"
+    }]
+  }],
+  "suites": [{
+    "id": "d5c990c6-98be-4502-9285-2f6303dfbd94",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["450a15c3-28a0-4306-8e55-2382453744a1"]
+  }],
+  "urls": ["http://localhost:8000/"],
+  "plugins": []
+}
